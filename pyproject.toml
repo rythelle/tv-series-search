@@ -1,0 +1,15 @@
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = [
+    "integration: requires a reachable Postgres database",
+]
+
+[tool.coverage.run]
+source = ["src/domain", "src/application"]
+branch = true
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]

@@ -1,0 +1,12 @@
+{
+  "id": 173,
+  "name": "Future Field Show",
+  "premiered": "2022-01-01",
+  "image": {"medium": "https://example.com/medium.jpg", "original": "https://example.com/original.jpg"},
+  "summary": "A show whose payload has a field our mapper does not know about.",
+  "genres": ["Sci-Fi"],
+  "rating": {"average": 8.0},
+  "weight": 55,
+  "_links": {"self": {"href": "https://api.tvmaze.com/shows/173"}},
+  "networkOfTheFuture": "a field that does not exist yet"
+}

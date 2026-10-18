@@ -1,0 +1,10 @@
+{
+  "id": 169,
+  "name": "Breaking Bad",
+  "premiered": "2008-01-20",
+  "image": {"medium": "https://example.com/medium.jpg", "original": "https://example.com/original.jpg"},
+  "summary": "<p>A chemistry teacher turns to crime.</p>",
+  "genres": ["Drama", "Crime", "Thriller"],
+  "rating": {"average": 9.4},
+  "weight": 98
+}

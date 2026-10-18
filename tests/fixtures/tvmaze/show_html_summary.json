@@ -1,0 +1,10 @@
+{
+  "id": 172,
+  "name": "HTML Summary Show",
+  "premiered": "2019-09-09",
+  "image": {"medium": "https://example.com/medium.jpg", "original": "https://example.com/original.jpg"},
+  "summary": "<p>A <b>bold</b> summary with <a href=\"#\">a link</a>.</p>",
+  "genres": ["Comedy"],
+  "rating": {"average": 7.2},
+  "weight": 42
+}

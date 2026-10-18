@@ -1,0 +1,7 @@
+.git/
+.venv/
+.ci-cache/
+reports/
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
