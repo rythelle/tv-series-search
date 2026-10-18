@@ -135,7 +135,15 @@ pipeline {
                 sh '''
                     set -eu
                     docker compose up -d
-                    ci/smoke.sh | tee reports/smoke.txt
+
+                    # Not `ci/smoke.sh | tee`: a pipeline's status is the last
+                    # command's, so tee's 0 hid the script's 1 and this stage
+                    # reported green on a `FAIL /api/v1/ready`. Keep the report
+                    # archived, but let the script's own status end the build.
+                    status=0
+                    ci/smoke.sh > reports/smoke.txt 2>&1 || status=$?
+                    cat reports/smoke.txt
+                    exit "$status"
                 '''
             }
         }
